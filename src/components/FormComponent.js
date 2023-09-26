@@ -22,6 +22,44 @@ const sections = [
 ]
 
 
+const formInputs = [
+    {
+        type: 'text',
+        label: 'Org Id',
+        placeholder: 'Enter Org ID'
+    },
+    {
+        type: 'text',
+        label: 'City Name',
+        placeholder: 'Enter City Name'
+    },
+    {
+        type: 'text',
+        label: 'Org Name',
+        placeholder: 'Enter Org Name'
+    },
+    {
+        type: 'text',
+        label: 'Team Name',
+        placeholder: 'Enter Team Name'
+    },
+    {
+        type: 'text',
+        label: 'No. of Integrations',
+        placeholder: 'Select'
+    },
+    {
+        type: 'text',
+        label: 'No. of Integrations',
+        placeholder: 'Select'
+    },
+    {
+        type: 'text',
+        label: 'Team Count',
+        placeholder: 'Enter Team Count'
+    },
+]
+
 const FormComponent = () => {
     return (
         <div className="form-wrapper">
@@ -40,7 +78,9 @@ const FormComponent = () => {
             </div>
 
             <form className="form-content">
-                <TextInput inputName="Org Id" placeholder="Enter Org ID"></TextInput>
+                {formInputs.map(input =>
+                    <TextInput inputName={input.label} placeholder={input.placeholder}></TextInput>
+                )}
             </form>
 
 
