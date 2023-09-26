@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.scss';
 
+import TopBar from './components/TopBar';
 import Header from './components/Header';
 import SidebarItem from './components/SidebarItem';
+import FormComponent from './components/FormComponent';
 import SubSidebarItem from './components/SubSidebarItem';
 
 const pages = [
@@ -74,7 +76,10 @@ const App = () => {
 						}
 					</div>
 				</div>
-				<div className='content'></div>
+				<div className='content'>
+					<TopBar name="Org Setup"></TopBar>
+					<FormComponent></FormComponent>
+				</div>
 			</main>
 		</div>
 	)

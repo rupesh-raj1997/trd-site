@@ -1,0 +1,15 @@
+.topbar-wrapper {
+    height: 2rem;
+    width: 100%;
+    padding:  0.85rem 1.5rem;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    align-items: center;
+    
+    .topbar-name {
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: #3C4043;
+        font-weight: 600;
+    }
+}
